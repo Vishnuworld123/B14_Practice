@@ -9,10 +9,11 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     db.init_app(app)
-
+    print("before table creation'")
     with app.app_context():
         db.create_all()
 
+    print("after table creation")
     register_routes(app)
     return app
 
