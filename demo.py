@@ -1,2 +1,4 @@
 def func():
-    pass
+    def inner():
+        pass
+    return inner

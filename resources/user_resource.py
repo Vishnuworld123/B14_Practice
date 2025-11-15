@@ -43,6 +43,7 @@ class UserGetUpdateDelete(Resource):
 
     def delete(self, user_id):
         UserProvider.delete_user_pr(user_id)
+        print("deleted user")
         return None, 204
 
     def patch(self, user_id):

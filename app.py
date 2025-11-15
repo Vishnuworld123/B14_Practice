@@ -5,6 +5,7 @@ from extensions.db import db
 
 
 def create_app():
+    print("in create app")
     app = Flask(__name__)
     app.config.from_object(Config)
     db.init_app(app)
