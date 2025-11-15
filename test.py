@@ -9,3 +9,6 @@ print("add dummy statements")
 
 while True:
     print("aaa")
+
+for j in range(1, 50):
+    print(j)

@@ -11,7 +11,7 @@ def create_app():
     app.config.from_object(Config)
     db.init_app(app)
     print("before table creation#############")
-    print("before table creation---------------")
+    
     with app.app_context():
         db.create_all()
 
